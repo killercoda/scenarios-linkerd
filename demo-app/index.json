@@ -1,0 +1,30 @@
+{
+  "title": "Demo App",
+  "description": "Install the demo application Emojivoto",
+  "details": {
+      "steps": [
+      {
+        "title": "Install the demo application Emojivoto",
+        "text": "step1/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish/finish.md"
+    },
+    "intro": {
+      "text": "init/init.md",
+      "courseData": "init/background.sh",
+      "code": "init/foreground.sh"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "nginx-ingress.yaml", "target": "/tmp", "chmod": "+x"},
+        {"file": "emojivoto-ingress.yaml", "target": "/root", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+  }
+}
