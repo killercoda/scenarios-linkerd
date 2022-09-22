@@ -44,3 +44,5 @@ kubectl port-forward -n ingress-nginx --address 0.0.0.0 service/ingress-nginx-co
 ```{{exec}}
 
 Finally [ACCESS]({{TRAFFIC_HOST1_1234}}) the Nginx Ingress -> Linkerd <small>(or [select the port here]({{TRAFFIC_SELECTOR}}))</small>.
+
+> Check our complete example of the [Demo App](https://killercoda.com/linkerd/scenario/demo-app)
